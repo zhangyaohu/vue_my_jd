@@ -3,16 +3,13 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import axios from 'axios'
 import store from './store/'
-import VueLazyload from 'vue-lazyload'
 /*import Loading from './components/Loading.vue'*/
 import routes from './router/routers'
 import './assert/css/base.less'
 Vue.use(VueRouter)
-Vue.use(VueLazyload,{
-    preLoad: 1.3,
-    error: require('./assert/images/loading.gif'),
-    loading: require('./assert/images/loading.gif')
-})
+Vue.config.productionTip = false;
+/*Vue.config.errorHandler(
+})*/
 window.router = new VueRouter({
     routes
 })

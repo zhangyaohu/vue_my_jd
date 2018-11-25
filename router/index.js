@@ -1,6 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
-const common = require('../lib/common');
+const common = require('../lib/common.js');
 const db = mysql.createPool({
     host: 'localhost',
     user: 'root',

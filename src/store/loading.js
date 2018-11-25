@@ -1,4 +1,4 @@
-import * as types from './mutation_type.js'
+
 const actions = {
     showLoading({commit}){
      commit('SHOWLOADING')

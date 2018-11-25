@@ -18,7 +18,13 @@
 
 <script>
     export default {
-        name: "Login"
+        name: "Login",
+        data(){
+            return{
+                userName:"",
+                password:""
+            }
+        }
     }
 </script>
 
@@ -58,6 +64,7 @@
        width: 100%;
        height: 100%;
        outline:none;
+       margin-left: 2.45rem;
    }
     .login-button{
         width: 60%;
